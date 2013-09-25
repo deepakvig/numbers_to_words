@@ -1,0 +1,7 @@
+== README
+
+Convert Numbers to Words uses :
+	
+	Twitter Bootstrap
+	RSpec
+	Cucumber
