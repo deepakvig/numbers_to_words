@@ -2,6 +2,24 @@
 
 Convert Numbers to Words uses :
 	
-	Twitter Bootstrap
-	RSpec
-	Cucumber
+  Twitter Bootstrap
+  RSpec
+  Cucumber
+
+This app add the functionality for converting numbers to words.
+
+No need for any migration as it doesn't need any database.
+
+Just need to do (to setup this app):  
+  bundle 
+
+
+RSpec and cucumber is used as the testing framework for this app.
+
+For running Tests :
+  run
+  rspec      #----> To run tests for controller, model, views and routing
+  cucumber   #----> To run integration tests
+  
+
+Load the root url to run the app.
