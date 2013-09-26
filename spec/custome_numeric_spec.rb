@@ -1,8 +1,11 @@
 require "spec_helper"
 
 describe CustomNumeric do
+  
   it "should check for valid values" do
-    
+    CustomNumeric.new(-10).convert_to_words.should == "Please enter a valid Integer Value"
+    CustomNumeric.new(10.10).convert_to_words.should == "Please enter a valid Integer Value"
+    CustomNumeric.new("Invalid Text").convert_to_words.should == "Please enter a valid Integer Value"
   end
   
   it "should print the digits 0-9 correctly" do
