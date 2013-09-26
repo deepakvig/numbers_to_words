@@ -1,5 +1,6 @@
 NumbersToWords::Application.routes.draw do
   
+  post '/' => 'convertor#create'
   root 'convertor#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

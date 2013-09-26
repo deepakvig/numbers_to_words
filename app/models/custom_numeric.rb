@@ -6,15 +6,14 @@ class CustomNumeric
   
   def convert_to_words
     if is_valid?
-      CustomNumeric.to_words(@number)
+      CustomNumeric.to_words(@number.to_i)
     else
       return "Please enter a valid Integer Value"
     end
   end
   
   def is_valid?
-    return true if @number.is_a?(Integer) && @number >= 0
-    return false
+    !!(@number.to_s =~ /^[0-9]+$/)
   end
   
   class << self

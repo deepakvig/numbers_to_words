@@ -1,0 +1,22 @@
+<%= form_for :convert, url: root_path, remote: true, html: {class: 'form-horizontal'} do |f| %>
+  <div class="form-group">
+    <label for="inputNumber" class="col-lg-2 control-label">Convert To Words : &nbsp;</label>
+    <div class="col-lg-10">
+      <%= f.text_field :value, class: "form-control", id: "inputNumber", placeholder: "Number" %>
+    </div>
+  </div>
+  <br/>
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <label class="form-control" id="labelWords"></label>
+    </div>
+  </div>
+  <br/>
+  <div class="form-group">
+    <label class="col-lg-2 control-label">&nbsp;</label>
+    <div class="col-lg-offset-2 col-lg-10">
+      <%= f.submit "Submit", class: "btn btn-default" %>
+    </div>
+  </div>
+
+<% end %>

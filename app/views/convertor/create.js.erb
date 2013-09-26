@@ -1,0 +1,5 @@
+<%- if @result == "Please enter a valid Integer Value" %>
+  $('#labelWords').html("<%= @result %>")
+<%- else %>
+  $('#labelWords').html("In Words : <%= @result %>")
+<% end %>
