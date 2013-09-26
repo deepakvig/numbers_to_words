@@ -36,7 +36,7 @@ gem "rspec-rails"
 gem "factory_girl_rails"
 gem "capybara"
 gem 'cucumber-rails'
-gem 'database_cleaner'
+#gem 'database_cleaner'
 gem "guard-rspec"
 gem 'selenium-webdriver'
 
